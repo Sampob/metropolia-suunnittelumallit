@@ -1,5 +1,10 @@
 package AbstractFactory;
 
+import AbstractFactory.Clothes.Hat;
+import AbstractFactory.Clothes.Pants;
+import AbstractFactory.Clothes.Shirt;
+import AbstractFactory.Clothes.Shoes;
+
 public class BossFactory implements ClothesFactory {
 
     private final String brand = "Boss";

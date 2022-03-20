@@ -1,5 +1,10 @@
 package AbstractFactory;
 
+import AbstractFactory.Clothes.Hat;
+import AbstractFactory.Clothes.Pants;
+import AbstractFactory.Clothes.Shirt;
+import AbstractFactory.Clothes.Shoes;
+
 public class Jasper {
     private Pants pants = null;
     private Hat hat = null;

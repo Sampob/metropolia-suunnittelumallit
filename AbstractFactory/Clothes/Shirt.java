@@ -1,4 +1,4 @@
-package AbstractFactory;
+package AbstractFactory.Clothes;
 
 public class Shirt implements Clothing {
 

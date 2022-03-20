@@ -1,4 +1,4 @@
-package AbstractFactory;
+package AbstractFactory.Clothes;
 
 public class Shoes implements Clothing {
     private String brand;
