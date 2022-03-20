@@ -11,6 +11,11 @@ public class Kotelo implements Laiteosa {
     private List<Laiteosa> osat = new ArrayList<Laiteosa>();
 
     @Override
+    public void setHinta(int hinta) {
+        this.hinta = hinta;
+    }
+
+    @Override
     public int getHinta() {
         int total = 0;
         for (Laiteosa osa : osat) {

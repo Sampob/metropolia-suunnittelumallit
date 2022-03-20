@@ -7,6 +7,11 @@ public class Naytonohjain implements Laiteosa {
     private int hinta = 600;
 
     @Override
+    public void setHinta(int hinta) {
+        this.hinta = hinta;
+    }
+
+    @Override
     public int getHinta() {
         return hinta;
     }

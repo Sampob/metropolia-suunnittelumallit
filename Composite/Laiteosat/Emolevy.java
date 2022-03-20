@@ -7,8 +7,13 @@ import Composite.Laiteosa;
 
 public class Emolevy implements Laiteosa {
 
-    private int hinta = 200;
+    private int hinta;
     private List<Laiteosa> osat = new ArrayList<Laiteosa>();
+
+    @Override
+    public void setHinta(int hinta) {
+        this.hinta = hinta;
+    }
 
     @Override
     public int getHinta() {

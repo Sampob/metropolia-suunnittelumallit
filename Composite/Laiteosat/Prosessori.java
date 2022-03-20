@@ -7,6 +7,11 @@ public class Prosessori implements Laiteosa {
     private int hinta = 299;
 
     @Override
+    public void setHinta(int hinta) {
+        this.hinta = hinta;
+    }
+
+    @Override
     public int getHinta() {
         return hinta;
     }

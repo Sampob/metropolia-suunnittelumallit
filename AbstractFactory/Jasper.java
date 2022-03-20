@@ -27,7 +27,6 @@ public class Jasper {
     }
 
     public static void main(String[] args) {
-
         Jasper jasper = new Jasper();
         jasper.wearOutfit(new AdidasFactory());
         jasper.showYourOutfit();
