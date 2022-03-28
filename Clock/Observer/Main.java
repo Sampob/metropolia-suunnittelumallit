@@ -1,4 +1,4 @@
-package Observer;
+package Clock.Observer;
 
 public class Main {
     public static void main(String[] args) {

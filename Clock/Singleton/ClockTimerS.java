@@ -1,4 +1,4 @@
-package Observer;
+package Clock.Singleton;
 
 import java.util.HashSet;
 import java.util.Observable;

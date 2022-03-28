@@ -1,4 +1,4 @@
-package Observer;
+package Clock.Singleton;
 
 import java.util.Observable;
 import java.util.Observer;
