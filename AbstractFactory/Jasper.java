@@ -28,10 +28,10 @@ public class Jasper {
 
     public static void main(String[] args) {
         Jasper jasper = new Jasper();
-        jasper.wearOutfit(new AdidasFactory());
+        jasper.wearOutfit(Tehdas.getInstance().makeAdidas());
         jasper.showYourOutfit();
 
-        jasper.wearOutfit(new BossFactory());
+        jasper.wearOutfit(Tehdas.getInstance().makeBoss());
         jasper.showYourOutfit();
     }
 }
