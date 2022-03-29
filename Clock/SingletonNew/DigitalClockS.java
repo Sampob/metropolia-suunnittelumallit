@@ -1,15 +1,12 @@
-package Clock.Observer;
+package Clock.SingletonNew;
 
 import java.util.Observable;
 import java.util.Observer;
 
-public class DigitalClock implements Observer {
+public class DigitalClockS implements Observer {
 
-    private ClockTimer timer;
-
-    public DigitalClock(ClockTimer ct) {
-        timer = ct;
-        timer.addObserver(this);
+    public DigitalClockS(ClockTimerS ct) {
+        ct.addObserver(this);
     }
 
     @Override
@@ -18,6 +15,8 @@ public class DigitalClock implements Observer {
     }
 
     private void draw() {
+        ClockTimerS timer = ClockTimerS.getInstance();
+
         int hour = timer.getHour();
         int minute = timer.getMinute();
         int second = timer.getSecond();

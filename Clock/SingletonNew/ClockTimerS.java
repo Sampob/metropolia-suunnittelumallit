@@ -1,13 +1,23 @@
-package Clock.Observer;
+package Clock.SingletonNew;
 
 import java.util.Observable;
 import java.util.Observer;
 
-public class ClockTimer extends Observable {
-
+public class ClockTimerS extends Observable {
     private static int hour = 0;
     private static int minute = 0;
     private static int second = 0;
+
+    private static ClockTimerS instance = null;
+
+    private ClockTimerS() {
+    }
+
+    public static ClockTimerS getInstance() {
+        if (instance == null)
+            instance = new ClockTimerS();
+        return instance;
+    }
 
     public int getHour() {
         return hour;
