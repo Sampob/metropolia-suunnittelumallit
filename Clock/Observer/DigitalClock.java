@@ -9,7 +9,7 @@ public class DigitalClock implements Observer {
 
     public DigitalClock(ClockTimer ct) {
         timer = ct;
-        timer.attach(this);
+        timer.addObserver(this);
     }
 
     @Override

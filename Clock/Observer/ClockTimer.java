@@ -37,17 +37,8 @@ public class ClockTimer extends Observable {
             hour++;
         }
 
-        for (Observer observer : observers) {
-            observer.update(this, this);
-        }
-    }
-
-    public void attach(Observer o) {
-        observers.add(o);
-    }
-
-    public void detach(Observer o) {
-        observers.remove(o);
+        setChanged();
+        notifyObservers();
     }
 
 }
