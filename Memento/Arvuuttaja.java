@@ -17,7 +17,9 @@ public class Arvuuttaja {
     }
 
     public Object liityPeliin(Asiakas a) {
-        return new Memento(new Random().nextInt(500));
+        int r = new Random().nextInt(500);
+        System.out.println("ARVO ON " + r);
+        return new Memento(r);
     }
 
     public boolean guess(Object m, int i) {

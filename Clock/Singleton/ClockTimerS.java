@@ -5,6 +5,8 @@ import java.util.Observable;
 import java.util.Observer;
 import java.util.Set;
 
+@SuppressWarnings("all")
+
 public class ClockTimerS extends Observable {
     private static int hour = 0;
     private static int minute = 0;

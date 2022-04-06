@@ -8,7 +8,7 @@ public class EveryOne implements ListConverter {
     public String listToString(List<String> l) {
         String string = "";
         for (String s : l) {
-            string += s + "\n";
+            string += s + "\n"; // String builder
         }
 
         return string;

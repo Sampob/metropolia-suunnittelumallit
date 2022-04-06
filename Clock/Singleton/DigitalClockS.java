@@ -3,6 +3,8 @@ package Clock.Singleton;
 import java.util.Observable;
 import java.util.Observer;
 
+@SuppressWarnings("all")
+
 public class DigitalClockS implements Observer {
 
     public DigitalClockS(ClockTimerS ct) {

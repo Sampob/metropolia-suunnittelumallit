@@ -1,5 +1,7 @@
 package Clock.SingletonNew;
 
+@SuppressWarnings("all")
+
 public class MainSingleton {
     public static void main(String[] args) {
         DigitalClockS dc = new DigitalClockS(ClockTimerS.getInstance());

@@ -3,6 +3,7 @@ package Clock.Observer;
 import java.util.Observable;
 import java.util.Observer;
 
+@SuppressWarnings("all")
 public class ClockTimer extends Observable {
 
     private static int hour = 0;

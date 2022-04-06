@@ -3,6 +3,8 @@ package Clock.Observer;
 import java.util.Observable;
 import java.util.Observer;
 
+@SuppressWarnings("all")
+
 public class DigitalClock implements Observer {
 
     private ClockTimer timer;
