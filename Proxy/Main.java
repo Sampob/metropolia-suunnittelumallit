@@ -9,6 +9,7 @@ public class Main {
         List<Image> valokuvakansio = new ArrayList<>();
 
         int current;
+        final String menuPrompt = "1. Next image\n2. Previous image\n3. Load picture\n4. Exit\n> ";
 
         boolean w = true;
 
@@ -23,8 +24,7 @@ public class Main {
 
         while(w) {
             System.out.println("\nCurrent image: " + valokuvakansio.get(current).showData());
-            System.out.println("1. Next image\n2. Previous image\n3. Load picture\n4. Exit");
-            System.out.print("> ");
+            System.out.print(menuPrompt);
 
             switch(sc.nextInt()) {
                 case 1:
