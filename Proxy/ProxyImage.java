@@ -3,28 +3,29 @@ package Proxy;
 public class ProxyImage implements Image {
 
     private final String filename;
-    private final String imagedata;
+    private final String imagename;
     private RealImage image;
 
-    public ProxyImage(String filename, String imagedata) {
+    public ProxyImage(String filename, String imagename) {
         this.filename = filename;
-        this.imagedata = imagedata;
+        this.imagename = imagename;
     }
 
     @Override
     public void displayImage() {
         if (image == null) {
-            image = new RealImage(filename, imagedata);
+            image = new RealImage(filename, imagename);
         }
         image.displayImage();
     }
 
     @Override
-    public void showData() {
-        if (image == null) {
-            image = new RealImage(filename, imagedata);
+    public String showData() {
+        if(image == null) {
+            return "PROXY " + imagename;
+        } else {
+            return image.showData();
         }
-        image.showData();
     }
 
 }

@@ -3,26 +3,26 @@ package Proxy;
 public class RealImage implements Image {
 
     private final String filename;
-    private final String imagedata;
+    private final String imagename;
 
-    public RealImage(String filename, String imagedata) {
+    public RealImage(String filename, String imagename) {
         this.filename = filename;
-        this.imagedata = imagedata;
+        this.imagename = imagename;
         loadImageFromDisk();
     }
 
     private void loadImageFromDisk() {
-        System.out.println("Loading   " + filename);
+        System.out.println("Loading     " + filename);
     }
 
     @Override
     public void displayImage() {
-        System.out.println("Displaying   " + filename);
+        System.out.println("Displaying  " + filename);
     }
 
     @Override
-    public void showData() {
-        System.out.println("Image name: " + imagedata);
+    public String showData() {
+        return imagename;
     }
 
 }
