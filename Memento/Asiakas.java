@@ -6,6 +6,7 @@ public class Asiakas extends Thread {
 
     private Object memento;
     private String name;
+    private int g;
 
     public Asiakas(String s) {
         name = s;
@@ -16,7 +17,9 @@ public class Asiakas extends Thread {
 
         int guess = new Random().nextInt(500);
         while (!Arvuuttaja.getInstance().guess(memento, guess)) {
-            System.out.println(name + ", guess: " + guess + " was wrong");
+            if (g % 10 == 0) {
+                System.out.println(name + ", guess: " + guess + " was wrong");
+            }
             guess = new Random().nextInt(500);
         }
         System.out.println("WINNER WINNER" + ", guess: " + guess + " was right, " + name + " stopping");

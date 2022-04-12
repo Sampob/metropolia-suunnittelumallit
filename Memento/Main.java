@@ -9,5 +9,16 @@ public class Main {
         asiakas1.start();
         asiakas2.start();
         asiakas3.start();
+
+        try {
+            asiakas1.join();
+            asiakas2.join();
+            asiakas3.join();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("ALL DONE");
+
     }
 }
