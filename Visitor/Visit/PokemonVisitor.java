@@ -3,7 +3,6 @@ package Visitor.Visit;
 import Visitor.State.CharizardState;
 import Visitor.State.CharmanderState;
 import Visitor.State.CharmeleonState;
-import Visitor.State.DittoState;
 
 public class PokemonVisitor implements StateVisitor {
 
@@ -20,11 +19,6 @@ public class PokemonVisitor implements StateVisitor {
     @Override
     public int visitState(CharizardState state) {
         return 100;
-    }
-
-    @Override
-    public int visitState(DittoState state) {
-        return 120;
     }
 
 }

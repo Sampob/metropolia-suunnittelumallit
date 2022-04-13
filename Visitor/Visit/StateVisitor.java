@@ -3,7 +3,6 @@ package Visitor.Visit;
 import Visitor.State.CharizardState;
 import Visitor.State.CharmanderState;
 import Visitor.State.CharmeleonState;
-import Visitor.State.DittoState;
 
 public interface StateVisitor {
     int visitState(CharmanderState state);
@@ -11,7 +10,5 @@ public interface StateVisitor {
     int visitState(CharmeleonState state);
 
     int visitState(CharizardState state);
-
-    int visitState(DittoState state);
 
 }
