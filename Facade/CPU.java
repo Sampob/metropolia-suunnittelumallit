@@ -7,6 +7,7 @@ public class CPU {
 
     void jump(long pos) {
         System.out.println("Jumping to " + pos);
+
     }
 
     void execute() {
