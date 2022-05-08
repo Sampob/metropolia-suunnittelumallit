@@ -1,16 +1,29 @@
 package Facade;
 
 public class CPU {
-    void freeze() {
-        System.out.println("Freezing");
+
+    Memory memory;
+    int pos;
+
+    void setCPU(Memory m) {
+        memory = m;
     }
 
-    void jump(long pos) {
-        System.out.println("Jumping to " + pos);
+    void freeze() {
+        System.out.println("Freezing");
+        this.pos = 0;
+    }
 
+    void jump(int pos) {
+        System.out.println("Jumping to " + pos);
+        this.pos = pos;
     }
 
     void execute() {
-        System.out.println("Executing");
+        System.out.println("Executing\n---");
+        for (int i = pos; i < memory.inMemory.length; i++) {
+            System.out.println(memory.inMemory[i]);
+        }
+        System.out.println("---\nExecuted");
     }
 }

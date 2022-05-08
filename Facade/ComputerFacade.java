@@ -10,6 +10,7 @@ public class ComputerFacade {
 
     public ComputerFacade(CPU cpu, HardDrive hdd, Memory ram) {
         this.cpu = cpu;
+        cpu.setCPU(ram);
         this.hdd = hdd;
         this.ram = ram;
     }

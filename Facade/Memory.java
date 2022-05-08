@@ -9,9 +9,9 @@ public class Memory {
             inMemory[(int) (position + i)] = data[i];
         }
         System.out.println("Loaded");
+    }
 
-        for (char c : inMemory) {
-            System.out.println(c);
-        }
+    char[] getMem() {
+        return inMemory;
     }
 }
